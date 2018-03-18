@@ -56,5 +56,6 @@ class Motorbike : protected Vehical{
 int main(){
 	Bike Giant;
 	Giant.SetSpeed(420);
+	
 	return 0;
 }
