@@ -12,14 +12,18 @@ public:
 		this->_height = 0;
 	}
 
-	Student(T height){
-		this->_height = height;
-	}
+	Student(T);
 
 	T getHeight(){
 		return this->_height;
 	}
 };
+
+// remember to add template<class T> Student<T>::
+template<class T>
+Student<T>::Student(T height){
+	this->_height = height;
+}
 
 int main(){
 	Student<int> Thomas(69);
